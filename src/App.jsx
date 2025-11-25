@@ -1,7 +1,6 @@
-import React from "react";
 import './App.css';
 import Button from "./components/Button.jsx";
-import Product from "./components/Product.jsx";
+import ProductCard from "./components/ProductCard.jsx";
 import Tile from "./components/Tile.jsx";
 import bag1 from "./assets/bag_1.png"
 import bag2 from "./assets/bag_2.png"
@@ -30,29 +29,29 @@ function App() {
                 />
             </nav>
             <main>
-                <Product
+                <ProductCard
                     span="Best seller"
-                    image={bag1}
-                    description="The handy bag"
-                    price="€ 400,-"
+                    productimage={bag1}
+                    productTitle="The handy bag"
+                    productPrice="€ 400,-"
                 />
-                <Product
+                <ProductCard
                     span="Best seller"
-                    image={bag2}
-                    description="The stylish bag"
-                    price="€ 250,-"
+                    productimage={bag2}
+                    productTitle="The stylish bag"
+                    productPrice="€ 250,-"
                 />
-                <Product
+                <ProductCard
                     span="New collection"
-                    image={bag3}
-                    description="The simple bag"
-                    price="€ 300,-"
+                    productimage={bag3}
+                    productTitle="The simple bag"
+                    productPrice="€ 300,-"
                 />
-                <Product
+                <ProductCard
                     span="New collection"
-                    image={bag4}
-                    description="The trendy bag"
-                    price="€ 150,-"
+                    productimage={bag4}
+                    productTitle="The trendy bag"
+                    productPrice="€ 150,-"
                 />
             </main>
             <footer>
